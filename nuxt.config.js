@@ -29,7 +29,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ["~/assets/css/main.css"],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
@@ -47,7 +47,12 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  buefy: {
+    // css: false,
+    materialDesignIcons: false,
+  },
+
+  modules: ["nuxt-buefy"],
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
@@ -61,8 +66,8 @@ export default {
           test: /\.(js|vue)$/,
           loader: "eslint-loader",
           exclude: /(node_modules)/,
-        })
+        });
       }
     },
   },
-}
+};

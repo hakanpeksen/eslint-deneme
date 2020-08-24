@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Deneme";
+  src: url("../fonts/Deneme.eot?gngatr");
+  src: url("../fonts/Deneme.eot?gngatr#iefix") format("embedded-opentype"),
+    url("../fonts/Deneme.ttf?gngatr") format("truetype"),
+    url("../fonts/Deneme.woff?gngatr") format("woff"),
+    url("../fonts/Deneme.svg?gngatr#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon-newspaper:before {
+  content: "\e904";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-bubble:before {
+  content: "\e96b";
+}
+.icon-bin:before {
+  content: "\e9ad";
+}
+.icon-plus:before {
+  content: "\ea0a";
+}
+.icon-minus:before {
+  content: "\ea0b";
+}
+.icon-cancel-circle:before {
+  content: "\ea0d";
+}
+.icon-checkmark:before {
+  content: "\ea10";
+}
+.icon-previous:before {
+  content: "\ea23";
+}
+.icon-next:before {
+  content: "\ea24";
+}
+.icon-circle-up:before {
+  content: "\ea41";
+}
+.icon-circle-down:before {
+  content: "\ea43";
+}
+.icon-share:before {
+  content: "\ea82";
+}
+.icon-google:before {
+  content: "\ea88";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+
+.mdi-remove:before {
+  content: "\e907";
+}
+.mdi-close:before {
+  content: "\e906";
+}
+.mdi-check:before {
+  content: "\e903";
+}
+.mdi-plus:before {
+  content: "\e902";
+}
+.mdi-alert-circle:before {
+  content: "\e901";
+}
+.mdi-eye:before {
+  content: "\e900";
+}
+.mdi-eye-off:before {
+  content: "\e905";
+}
+.mdi {
+  font-size: 1.2rem;
+}
+.mdi-24px {
+  font-size: 1.5rem;
+}
+
+.mdi-48px {
+  font-size: 3rem;
+}
+
+.mdi:before,
+.mdi-set {
+  display: block;
+  font: normal normal normal 24px/1 "Deneme";
+  font-size: inherit;
+  text-rendering: auto;
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.source-icon {
+  font-family: "Deneme";
+  font-size: 2rem !important;
+  width: 2em !important;
+  height: 2em !important;
+}
