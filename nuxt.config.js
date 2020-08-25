@@ -1,3 +1,4 @@
+const bodyParser = require("body-parser")
 export default {
   /*
    ** Nuxt rendering mode
@@ -52,7 +53,7 @@ export default {
     materialDesignIcons: false,
   },
 
-  modules: ["nuxt-buefy"],
+  modules: ["nuxt-buefy", "@nuxtjs/axios"],
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
@@ -66,8 +67,9 @@ export default {
           test: /\.(js|vue)$/,
           loader: "eslint-loader",
           exclude: /(node_modules)/,
-        });
+        })
       }
     },
   },
-};
+  serverMiddleware: [bodyParser.json(), "~/api"],
+}

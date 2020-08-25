@@ -1,31 +1,26 @@
 <template>
   <div class="container p-sm">
-    <form action="">
-      <b-field class="p-t-md trend-form" label="Email" label-for="nf_email">
-        <b-input
-          id="nf_email"
-          type="email"
-          size="is-medium"
-          placeholder="Email address"
-          required
-        />
-      </b-field>
-    </form>
-    <div class="p-md">
-      test
-    </div>
-    <span class="icon-google source-icon has-text-warning" />
-    <span class="icon-newspaper source-icon" />
-    <span class="icon-cancel-circle source-icon" />
-    <span class="icon-next source-icon" />
-    <span class="mdi-plus source-icon" />
+    <Products :products="products" />
+    <Cart :cart="cart" />
   </div>
 </template>
 
 <script>
+import Products from "@/components/product/Products"
+import Cart from "@/components/cart/Cart"
+
 export default {
+  components: { Cart, Products },
   data() {
     return {}
+  },
+  computed: {
+    products() {
+      return this.$store.getters.getProducts
+    },
+    cart() {
+      return this.$store.getters.getCart
+    },
   },
 }
 </script>
