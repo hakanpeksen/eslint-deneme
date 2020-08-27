@@ -1,7 +1,7 @@
 <template>
-  <div class="alert rounded-0 custom-alert mt-4">
-    <span class="font-weight-bold">Buralar Çok ıssız!!</span>
-    <p class="p-0 m-0">
+  <div class="notification mt-4">
+    <span class="has-text-black">Buralar Çok ıssız!!</span>
+    <p class="">
       Henüz bir ürününüz bulunmuyor...
     </p>
   </div>

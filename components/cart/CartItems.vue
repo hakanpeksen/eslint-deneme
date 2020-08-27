@@ -1,26 +1,26 @@
 <template>
-  <table class="table table-hover table-striped table-bordered">
-    <thead>
-      <th class="text-center">
+  <client-only>
+    <table class="table is-bordered">
+      <th class="has-text-centered p-4">
         Ürün Adı
       </th>
-      <th class="text-center">
+      <th class="has-text-centered">
         Adet
       </th>
-      <th class="text-center">
+      <th>
         Fiyat
       </th>
-      <th class="text-center">
+      <th>
         Tutar
       </th>
-      <th class="text-center">
+      <th>
         Sil
       </th>
-    </thead>
-    <tbody>
-      <CartItem v-for="item in cart" :key="item.id" :item="item" />
-    </tbody>
-  </table>
+      <tbody>
+        <CartItem v-for="item in cart" :key="item.id" :item="item" />
+      </tbody>
+    </table>
+  </client-only>
 </template>
 <script>
 import CartItem from "@/components/cart/CartItem"

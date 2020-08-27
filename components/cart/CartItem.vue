@@ -1,40 +1,34 @@
 <template>
   <tr class="bg-custom-color">
-    <td class="p-2">
+    <td class="pt-4">
       {{ item.title }}
     </td>
-    <td class="p-2 text-center w-25">
-      <div class="d-flex flex-row justify-content-center p-0 m-0">
-        <button
-          class="btn btn-sm btn-outline-danger rounded-0"
-          @click="changeCount(-1)"
-        >
+    <td>
+      <div class="flex-cart">
+        <button class="button is-small is-danger mr-2" @click="changeCount(-1)">
           -
         </button>
         <input
           v-model="product_count"
           disabled
           type="text"
-          class="form-control form-control-sm w-25 text-center rounded-0 border-left-0 border-right-0"
+          class="input w-45"
         />
-        <button
-          class="btn btn-sm btn-outline-success rounded-0"
-          @click="changeCount(1)"
-        >
+        <button class="button is-small is-success ml-2" @click="changeCount(1)">
           +
         </button>
       </div>
     </td>
-    <td class="p-2 text-center">
+    <td class="pt-4">
       {{ item.price }}
       ₺
     </td>
-    <td class="p-2 text-center">
+    <td class="pt-4">
       {{ item.totalPrice }}
       ₺
     </td>
-    <td class="p-2 text-center">
-      <button class="btn btn-sm btn-danger" @click="remove">
+    <td class="pt-4">
+      <button class="button is-small is-danger" @click="remove">
         Sil
       </button>
     </td>
@@ -69,5 +63,3 @@ export default {
   },
 }
 </script>
-
-<style scoped></style>
