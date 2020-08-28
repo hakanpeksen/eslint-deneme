@@ -1,5 +1,5 @@
 <template>
-  <div class="field is-grouped">
+  <div class="flex-cart">
     <p class="flex-product">
       <span> {{ product.title }} </span>
       <span class="price-container p-sm ml-3">

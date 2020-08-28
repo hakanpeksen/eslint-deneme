@@ -1,9 +1,9 @@
 <template>
-  <div class="product-container card">
-    <h3 class="mb-2 has-text-black has-text-centered">
-      Ürün Listesi
-    </h3>
-    <div class="">
+  <div class="columns">
+    <div class="column">
+      <h3 class="mb-2 has-text-black has-text-centered">
+        Ürün Listesi
+      </h3>
       <Product
         v-for="product in products"
         :key="product.id"
