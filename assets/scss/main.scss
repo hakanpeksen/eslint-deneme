@@ -32,7 +32,7 @@ $table-background-color: transparent;
 // Update some of Bulma's component variables
 $body-background-color: $deneme-lighter;
 $control-border-width: 1px;
-$tabs-link-padding: 0.5em 0.8em;
+$tabs-link-padding: 0.5em 0.8em;   //örn: .tabs a {padding: .5em .8em; }
 $tabs-border-bottom-color: transparent;
 $input-focus-border-color: $primary;
 $input-focus-box-shadow-color: rgba($primary, 0.25);
