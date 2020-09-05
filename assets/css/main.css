@@ -108,13 +108,13 @@
   width: 2em !important;
   height: 2em !important;
 }
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
+/* .container {
+  /* margin: 0 auto; */
+  /* min-height: 100vh; */
+  /* display: flex;
   justify-content: center;
-  align-items: center;
-}
+   align-items: center;
+}*/
 
 /* .product-container,
 .cart-container {

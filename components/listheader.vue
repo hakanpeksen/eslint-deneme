@@ -15,38 +15,29 @@
                   <div class="control">
                     <div class="select w-100p">
                       <select
-                        v-model="countryCode"
                         class="w-100p is-size-5 is-uppercase"
                         aria-label="Country"
-                        @change="refreshList"
-                      >
-                        <option
-                          v-for="item of dataIndex"
-                          :key="item.id"
-                          :value="item.code"
-                          class="is-uppercase"
-                        >
-                          {{ item.name }}
-                        </option>
-                      </select>
+                      />
                     </div>
                   </div>
                 </div>
               </form>
             </div>
-            <div class="tabs is-full-width is-size-5">
-              <ul>
-                <li>
-                  <n-link :to="'/news'" class="is-active">
-                    NEWS
-                  </n-link>
-                </li>
-                <li>
-                  <n-link :to="'/news'" class="is-active">
-                    GOOGLE
-                  </n-link>
-                </li>
-              </ul>
+            <div class="column is-narrow">
+              <div class="tabs is-full-width is-size-5">
+                <ul>
+                  <li>
+                    <n-link :to="'/news'" class="is-active">
+                      NEWS
+                    </n-link>
+                  </li>
+                  <li>
+                    <n-link :to="'/news'" class="is-active">
+                      GOOGLE
+                    </n-link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
