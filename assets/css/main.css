@@ -108,6 +108,40 @@
   width: 2em !important;
   height: 2em !important;
 }
+
+@media screen and (max-width: 350px) {   /* width:349px de, font-size:12px olur */
+  html {
+    /* reducing base font size will reduce all rem sizes */
+    font-size: 12px!important;
+  }
+}
+
+@media screen and (min-width: 351px) {  /* width:350px- 400 px arası  font-size:13px olur */  /* width:351px de, font-size:13px olur */
+  html {
+    /* reducing base font size will reduce all rem sizes */
+    font-size: 13px!important;
+  }
+}
+
+@media screen and (min-width: 401px) {  /* width:400px de, font-size:13px olur */    /* width:401px de, font-size:15px olur */
+  html {
+    /* reducing base font size will reduce all rem sizes */
+    font-size: 15px!important;
+  }
+}
+
+@media screen and (min-width: 501px) {   /* width:500px de,font-size:15px olur */
+  html {
+    /* reducing base font size will reduce all rem sizes */
+    font-size: 16px!important;
+  }
+}
+
+
+
+
+
+
 /* .container {
   /* margin: 0 auto; */
   /* min-height: 100vh; */
