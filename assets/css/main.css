@@ -137,7 +137,14 @@
   }
 }
 
+.tabs li a.is-active {
+  border-bottom-color: #E5396B;
+  color: #E5396B;
+}
 
+.w-100p {  /*örn: <div class="select w-100p">*/
+  width: 100%;
+}
 
 
 
