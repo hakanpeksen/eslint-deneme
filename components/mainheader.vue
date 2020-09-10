@@ -54,6 +54,7 @@ export default {
   data() {
     return {
       isOpen: false,
+      data: 'hakan',
     }
   },
 }

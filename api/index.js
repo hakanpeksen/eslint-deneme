@@ -1,13 +1,13 @@
-const express = require("express")
-const session = require("express-session")
+const express = require('express')
+const session = require('express-session')
 const app = express()
 app.use(
   session({
-    secret: "hkpkd",
+    secret: 'hkpkd',
   })
 )
 //test
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
   let cart = []
   if (req.session.cart) {
     cart = req.session.cart
@@ -18,16 +18,16 @@ app.get("/", (req, res) => {
     cartTotalPrice += item.totalPrice
   })
 
-  console.log("Ürünler gönderildi...")
+  console.log('Ürünler gönderildi...')
   res.status(200).json({
     products: [
-      { id: 1, title: "Keçi Peyniri", price: 10 },
-      { id: 2, title: "Sele Zeytin", price: 15 },
-      { id: 3, title: "Petek Balı", price: 40 },
-      { id: 4, title: "Vişne Reçeli", price: 5 },
-      { id: 5, title: "Danet Kangal Sucuk", price: 17 },
-      { id: 6, title: "Kaymak", price: 20 },
-      { id: 7, title: "Zeytin Ezmesi", price: 8 },
+      { id: 1, title: 'Keçi Peyniri', price: 10 },
+      { id: 2, title: 'Sele Zeytin', price: 15 },
+      { id: 3, title: 'Petek Balı', price: 40 },
+      { id: 4, title: 'Vişne Reçeli', price: 5 },
+      { id: 5, title: 'Danet Kangal Sucuk', price: 17 },
+      { id: 6, title: 'Kaymak', price: 20 },
+      { id: 7, title: 'Zeytin Ezmesi', price: 8 },
     ],
     cart: {
       items: cart,
@@ -36,18 +36,18 @@ app.get("/", (req, res) => {
   })
 })
 
-app.post("/add-to-cart", (req, res) => {
+app.post('/add-to-cart', (req, res) => {
   let product = req.body.product
 
   let cart = []
-  req.session.title = "Gökhan Kandemir"
+  req.session.title = 'Gökhan Kandemir'
   if (req.session.cart) {
-    console.log("Session Bulundu!!!")
+    console.log('Session Bulundu!!!')
     cart = req.session.cart
   }
 
   if (cart.length > 0) {
-    console.log("Sepet Bulundu!!!")
+    console.log('Sepet Bulundu!!!')
     let itemIndex = cart.findIndex((item) => item.id == product.id)
     if (itemIndex > -1) {
       cart[itemIndex].count += product.count
@@ -81,17 +81,17 @@ app.post("/add-to-cart", (req, res) => {
   })
 })
 
-app.post("/change-count", (req, res) => {
+app.post('/change-count', (req, res) => {
   let product = req.body.product
   let cart = []
   // req.session.title = "Hakan"
   if (req.session.cart) {
-    console.log("Session Bulundu!!!")
+    console.log('Session Bulundu!!!')
     cart = req.session.cart
   }
 
   if (cart.length > 0) {
-    console.log("Sepet Bulundu!!!")
+    console.log('Sepet Bulundu!!!')
     let itemIndex = cart.findIndex((item) => item.id == product.id)
     if (itemIndex > -1) {
       cart[itemIndex].count = product.count
@@ -115,7 +115,7 @@ app.post("/change-count", (req, res) => {
   })
 })
 
-app.post("/remove-product", (req, res) => {
+app.post('/remove-product', (req, res) => {
   let product = req.body.product
 
   let cart = []
@@ -147,6 +147,6 @@ app.post("/remove-product", (req, res) => {
 })
 
 module.exports = {
-  path: "/api",
+  path: '/api',
   handler: app,
 }
