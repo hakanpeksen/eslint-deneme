@@ -102,8 +102,8 @@
 </template>
 
 <script>
-import mainheader from "~/components/mainheader"
-import listheader from "~/components/listheader"
+import mainheader from '~/components/mainheader'
+import listheader from '~/components/listheader'
 export default {
   components: {
     mainheader,

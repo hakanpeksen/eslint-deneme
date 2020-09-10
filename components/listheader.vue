@@ -56,14 +56,14 @@ export default {
 
   beforeMount: function () {
     if (process.browser) {
-      window.addEventListener("scroll", this.handleScroll)
-      window.addEventListener("resize", this.handleResize)
+      window.addEventListener('scroll', this.handleScroll)
+      window.addEventListener('resize', this.handleResize)
     }
   },
   destroyed: function () {
     if (process.browser) {
-      window.removeEventListener("scroll", this.handleScroll)
-      window.removeEventListener("resize", this.handleResize)
+      window.removeEventListener('scroll', this.handleScroll)
+      window.removeEventListener('resize', this.handleResize)
     }
   },
   mounted: function () {
@@ -72,7 +72,7 @@ export default {
   },
   methods: {
     handleScroll() {
-      const navMainHeight = document.getElementById("navMain").offsetHeight
+      const navMainHeight = document.getElementById('navMain').offsetHeight
       if (window.pageYOffset >= navMainHeight) {
         this.isSticky = true
       } else {
@@ -80,7 +80,7 @@ export default {
       }
     },
     handleResize() {
-      this.listHeaderHeight = document.getElementById("listHeader").offsetHeight
+      this.listHeaderHeight = document.getElementById('listHeader').offsetHeight
     },
   },
 }

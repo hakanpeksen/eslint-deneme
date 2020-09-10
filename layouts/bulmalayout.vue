@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import mainheader from "~/components/mainheader"
+import mainheader from '~/components/mainheader'
 
 export default {
   components: {

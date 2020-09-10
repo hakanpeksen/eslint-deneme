@@ -51,14 +51,14 @@ export default {
   methods: {
     changeCount(value) {
       if (value == -1 && this.item.count == 1) {
-        this.$store.dispatch("removeProduct", this.item)
+        this.$store.dispatch('removeProduct', this.item)
       } else {
         this.item.count += value
-        this.$store.dispatch("changeCount", this.item)
+        this.$store.dispatch('changeCount', this.item)
       }
     },
     remove() {
-      this.$store.dispatch("removeProduct", this.item)
+      this.$store.dispatch('removeProduct', this.item)
     },
   },
 }
