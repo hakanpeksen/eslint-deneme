@@ -105,7 +105,10 @@ import Products from '@/components/product/Products'
 import Cart from '@/components/cart/Cart'
 
 export default {
-  components: { Cart, Products },
+  components: {
+    Cart,
+    Products,
+  },
   data() {
     return {}
   },
