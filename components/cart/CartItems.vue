@@ -23,7 +23,7 @@
   </client-only>
 </template>
 <script>
-import CartItem from "@/components/cart/CartItem"
+import CartItem from '@/components/cart/CartItem'
 export default {
   components: {
     CartItem,

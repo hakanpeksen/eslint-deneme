@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import Alert from "@/components/cart/Alert"
-import CartItems from "@/components/cart/CartItems"
-import CartFooter from "@/components/cart/CartFooter"
+import Alert from '@/components/cart/Alert'
+import CartItems from '@/components/cart/CartItems'
+import CartFooter from '@/components/cart/CartFooter'
 export default {
   components: {
     Alert,

@@ -51,7 +51,7 @@ export default {
       }
     },
     addToCart() {
-      this.$store.dispatch("addToCart", {
+      this.$store.dispatch('addToCart', {
         count: this.product_count,
         ...this.product,
       })

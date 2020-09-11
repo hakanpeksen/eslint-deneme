@@ -101,8 +101,8 @@
 </template>
 
 <script>
-import Products from "@/components/product/Products"
-import Cart from "@/components/cart/Cart"
+import Products from '@/components/product/Products'
+import Cart from '@/components/cart/Cart'
 
 export default {
   components: { Cart, Products },
