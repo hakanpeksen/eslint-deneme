@@ -24,16 +24,20 @@ export default {}
   height: 100vh;
   border: 20px solid #000000;
   display: flex;
-  /* flex-wrap: wrap; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
+  flex-wrap: wrap;
+
+  /* 3 kutu üst üste durur */
+  /* flex-direction: column;   */
+
+  justify-content: center;
   /* justify-content: space-between; */
   /* justify-content: space-around; */
   /* justify-content: space-evenly; */
   /* align-items: center; */
   /* align-items: flex-start; */
   /* align-items: flex-end; */
-  /* align-items: stretch; */ /* bu özellik için height kapatılmalı */ /* height: 200px; */
+  align-items: stretch;
+  /* bu özellik için height kapatılmalı */ /* height: 200px; */
 
   /* ekranı küçültünce  sağdaki kutuyu alta atar ve üstten boşluk brakır */
   /* flex-wrap: wrap; */
@@ -46,7 +50,7 @@ export default {}
   /* flex-flow: column wrap; */
 }
 .child1 {
-  width: 200px;
+  /* width: 200px; */
   height: 200px;
   background: blue;
   /* 1.kutu  en sağa gelir  */
@@ -68,12 +72,12 @@ export default {}
   /* flex-grow: 1; */
 
   /* 1.kutudaki width ve grow u silip, 3.kutudaki grow u silip ve 2.kutudaki grow u silip,  flex 1 0 auto dersen, 2.kutunun genişliği  büyür  */
-  /* flex: 1 0 auto; */
+  flex: 1 0 auto;
   /* 1.kutudaki width ve grow u silip, 3.kutudaki grow u silip ve 2.kutudaki grow u silip,  flex 1 dersen, 2.kutunun genişliği  büyür  */
   /* flex: 1; */
   /* flex: 1 1 300px; */
   /* 2.kutu ortada olur */
-  align-self: center;
+  /* align-self: center; */
 }
 .child3 {
   width: 200px;
@@ -84,7 +88,7 @@ export default {}
   /* flex-grow: 1; */
   /* flex: 1 1 300px; */
   /* 3.kutu aşağıda olur */
-  align-self: flex-end;
+  /* align-self: flex-end; */
 }
 .child4 {
   width: 200px;

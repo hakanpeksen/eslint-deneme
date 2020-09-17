@@ -98,6 +98,22 @@
         </div>
       </article>
     </section>
+    <section class="section">
+      <article class="media source-title">
+        <div class="media-left">
+          media
+        </div>
+        <div class="media-left">
+          media
+        </div>
+        <div class="media-left">
+          media
+        </div>
+        <div class="media-left">
+          media
+        </div>
+      </article>
+    </section>
   </div>
 </template>
 
